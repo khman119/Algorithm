@@ -7,9 +7,9 @@ def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
     if a < b:
-        parent[a] = b
-    else:
         parent[b] = a
+    else:
+        parent[a] = b
 
 n, m = map(int, input().split())
 parent = [0] * (n + 1)
