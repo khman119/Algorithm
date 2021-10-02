@@ -17,7 +17,6 @@ def binary_search(target, start, end):
                 total += mid
         # total 값이 예산보다 크다면 상한액을 낮춰야한다.
         if total > target:
-            answer = min(answer, mid)
             end = mid - 1
         # total 값이 예산보다 작다면 상한액을 키워야한다.
         else:
